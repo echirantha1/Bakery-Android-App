@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".AdminAddItems">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_admin_return"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_back"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:text="Add Cakes"
+                    android:fontFamily="casual"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/border_black"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/upload_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/cake_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_upload_image"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textColorHint="#fff"
+                    android:drawableStart="@drawable/upload_image"
+                    android:textStyle="bold"
+                    android:hint="Upload Image"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/btn_upload"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:paddingTop="10dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/txt_product_title"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/text_colour"
+                    android:hint="Cupcake Name"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/txt_product_price"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/text_colour"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/txt_product_category"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/text_colour"
+                    android:hint="Category"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_save_products"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:background="@drawable/btn"
+                    android:clickable="true"
+                    android:hint="Save Cupcake"
+                    android:textColorHint="#ffffff"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
